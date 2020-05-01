@@ -18,7 +18,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Lfy
- * @since 2020-04-24
+ * @since 2020-04-28
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -29,6 +29,7 @@ public class Comment implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty(value = "评价ID")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 

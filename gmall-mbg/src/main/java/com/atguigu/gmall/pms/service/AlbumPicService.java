@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author Lfy
- * @since 2020-04-24
+ * @since 2020-04-28
  */
 public interface AlbumPicService extends IService<AlbumPic> {
 

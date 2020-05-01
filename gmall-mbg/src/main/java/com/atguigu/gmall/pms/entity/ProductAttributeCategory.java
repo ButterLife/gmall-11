@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author Lfy
- * @since 2020-04-24
+ * @since 2020-04-28
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -28,6 +28,7 @@ public class ProductAttributeCategory implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @ApiModelProperty(value = "分类表id")
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
