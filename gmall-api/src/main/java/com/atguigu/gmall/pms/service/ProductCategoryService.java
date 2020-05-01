@@ -1,7 +1,10 @@
 package com.atguigu.gmall.pms.service;
 
+import com.atguigu.gmall.pms.entity.PmsProdectCategoryWithChildrentItern;
 import com.atguigu.gmall.pms.entity.ProductCategory;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ProductCategoryService extends IService<ProductCategory> {
 
+
+    List<PmsProdectCategoryWithChildrentItern> getCatelogWithChilder(Integer i);
 }

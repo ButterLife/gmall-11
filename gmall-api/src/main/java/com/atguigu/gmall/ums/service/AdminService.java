@@ -12,5 +12,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-04-24
  */
 public interface AdminService extends IService<Admin> {
+    //自己写的登入功能
+    Admin login(String username, String password);
 
+    Admin getUserInfo(String userName);
 }
